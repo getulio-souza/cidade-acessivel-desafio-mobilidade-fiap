@@ -15,6 +15,16 @@
     --text-color-white: #fff;
 }
 
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    user-select: none;
+}
+
 .navbar-container{
     background-color: var(--secondary-yellow);
     width: 100%;
@@ -294,4 +304,79 @@ footer .links {
 
 .real-time-topic-icon p{
     font-size: 10px;
+}
+
+/**** how to get to ****/
+
+.details {
+    background: var(--secondary-yellow);
+    padding: 50px;
+}
+
+.details h4 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.details div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 767px){
+    .details div {
+        flex-wrap: wrap;
+    }    
+
+    .details div section {
+        margin: 10px;
+    }
+}
+
+.details div section {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondary-yellow);
+    box-shadow: 0px 2px 5px 2px rgb(173, 168, 168);
+}
+
+.details div .icon-card {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--terciary-yellow);
+    box-shadow: 0px 2px 5px rgb(173, 168, 168);
+}
+
+.details div i {
+    font-size: 50px;
+}
+
+.details div p {
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.details div button {
+    border: none;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: var(--terciary-yellow);
+    box-shadow: 0px 2px 3px rgb(173, 168, 168);
 }
