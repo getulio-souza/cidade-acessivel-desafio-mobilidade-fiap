@@ -1,0 +1,75 @@
+/* global variables */
+
+/* navbar */
+
+:root{
+    --primary-yellow: #fdefbc;
+    --secondary-yellow: #fce38a;
+    --terciary-yellow: #fbd758;
+    
+    --primary-black: #2a2a2a;
+    --secondary-black: #111111;
+    --terciary-black: #000000;
+    
+    --text-color-white: #fff;
+}
+
+.navbar-container{
+    background-color: var(--secondary-yellow);
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+.btn-category-container{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+.btn-category-container>li{
+    margin: 0 10px;
+}
+
+.btn-category-container{
+   display: flex;
+   align-items: center;
+   font-family: inter;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo-img{
+    width: 70px;
+}
+
+.login-btn{
+   color: var(--primary-black);
+   transition: .5s;  
+}
+
+.login-btn:hover{
+    opacity: 0.7;
+    color: var(--secondary-black);
+}
+
+.subscribe-btn{
+  background-color: var(--primary-black);
+  color:var(--text-color-white);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.subscribe-btn:hover{
+    background-color: transparent;
+    border: 1px solid #2a2a2a;
+    color: var(--primary-black);
+}
+
