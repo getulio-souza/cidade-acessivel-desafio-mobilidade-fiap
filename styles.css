@@ -223,3 +223,58 @@ footer .links {
     margin: 0 auto;
     margin-top: 20px;
 }
+
+
+/**** real time screen ****/
+
+.real-time-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width:700px){
+    .real-time-container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+}
+
+.real-time-info-container{
+    text-align: start;
+}
+@media screen and (max-width:900px){
+    .real-time-info-container{
+        text-align: center;
+    }
+}
+
+.real-time-img-container{
+    position: relative;
+}
+
+.real-time-info-title>h4{
+    font-weight: 700;
+}
+
+.real-time-topics-container{
+    margin-top: 30px;
+}
+.real-time-img{
+  width: 140px;
+  height: 260px;
+  position: absolute;
+  top: 12%;
+  left: 21%;
+}
+
+.real-time-topic-icon{
+  display: flex;
+ 
+  gap: 10px;
+}
+
+.real-time-topic-icon p{
+    font-size: 10px;
+}
