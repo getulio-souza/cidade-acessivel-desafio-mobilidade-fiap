@@ -411,6 +411,24 @@ a{
     font-weight: bold;
 }
 
+#senha1 {
+    position: absolute;
+    bottom: 24vh;
+    right: 30px;
+}
+
+#senha2 {
+    position: absolute;
+    bottom: 34vh;
+    right: 30px;
+}
+
+#senha3 {
+    position: absolute;
+    bottom: 24vh;
+    right: 30px;
+}
+
 /* rodapé */
 
 .row {
