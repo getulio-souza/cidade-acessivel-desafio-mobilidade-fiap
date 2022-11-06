@@ -31,20 +31,64 @@
         </div>
     </nav>
     <!-- main header -->
-    <section class="header-container">
-        <h1 class="header-title">Mapa Interativo</h1>
-        <h5 class="header-subtitle">Selecione uma opção</h5>
-    <!-- select buttons -->
-    <article class="map-container">
-        <div class="select-btns-container">
-            <button class="map-btn">Apontar local</button>
-            <button class="map-btn">Buscar local</button>
-        </div>
-        <!-- mapa -->
-        <div>
-            <img src="/img/mapa-sp.JPG" alt="">
-        </div>
-    </article>
+    <section class="map-container">
+        <h1 class="map-title">Mapa Interativo</h1>
+        <h5 class="map-subtitle">Selecione uma opção</h5>
+        <!-- select buttons -->
+        <article class="map-container">
+            <div class="select-btns-container">
+                <button class="map-btn">Apontar local</button>
+                <button class="map-btn">Buscar local</button>
+            </div>
+            <!-- filter bar -->
+            <section class="filter-bar-container">
+                <div class="default-input-field">
+                    <input type="text" placeholder="Nome da rua">
+                </div>
+                <!-- número -->
+                <div class="default-input-field">
+                    <input type="text" placeholder="Número">
+                </div>
+                <!-- regiao-->
+                <div class="default-input-field">
+                    <select name="regiao" id="regiao">
+                        <option value="0">Região</option>
+                        <option value="1">Zona Norte</option>
+                        <option value="2">Zona Sul </option>
+                        <option value="3">Zona Leste</option>
+                        <option value="4">Zona Oeste</option>
+                    </select>
+                </div>
+                <!-- bairro -->
+                <div class="default-input-field">
+                    <select name="bairro" id="bairro">
+                        <option value="0">Bairro</option>
+                        <option value="1">Zona Norte</option>
+                        <option value="2">Zona Sul </option>
+                        <option value="3">Zona Leste</option>
+                        <option value="4">Zona Oeste</option>
+                    </select>
+                </div>
+                <!-- problem -->
+                <div class="default-input-field">
+                    <select name="problem" id="problem">
+                        <option value="0">Problema</option>
+                        <option value="1">Calçada escuracada</option>
+                        <option value="2">Ausência de rampa de acesso</option>
+                        <option value="3">Sinalização inexistente</option>
+                        <option value="4">Iluminação</option>
+                    </select>
+                </div>
+                <!-- action button -->
+                <div class="map-search-btn-container">
+                    <button class="map-search-btn">Procurar</button>
+                </div>
+            </section>
+            <!-- mapa -->
+            <div>
+                <img src="/img/mapa-sp.JPG" alt="">
+            </div>
+        </article>
     </section>
 </header>
 
