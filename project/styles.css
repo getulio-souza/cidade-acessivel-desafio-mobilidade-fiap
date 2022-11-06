@@ -368,7 +368,8 @@ a{
 
 #exampleModalToggle .modal-content h4,
 #exampleModalToggle2 .modal-content h4 {
-    font-size: 40px;
+    font-size: 30px;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -419,8 +420,8 @@ a{
 
 #senha1 {
     position: absolute;
-    bottom: 24vh;
-    right: 30px;
+    top: 136px;
+    left: 233px;
 }
 
 #senha2 {
