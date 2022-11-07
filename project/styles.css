@@ -240,11 +240,23 @@ a{
   font-size: 25px;
   gap: 10px;
 }
+@media screen and (max-width:900px){
+    .real-time-topic-icon{
+        max-width: 180px;
+        margin: 0 auto;
+        text-align: start;
+    }
+}
 
 .real-time-topic-icon p{
     font-size: 1rem;
 }
 
+@media screen and (max-width:900px){
+   .real-time-topic-icon p{
+        font-size: 10px;
+    }
+}
 /**** how to get to ****/
 
 .details {

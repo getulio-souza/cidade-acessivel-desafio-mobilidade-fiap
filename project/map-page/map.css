@@ -169,7 +169,12 @@ a{
 .select-btns-container{
    display: flex;
    justify-content: center;
-   margin-bottom: 30px;
+   padding-bottom: 20px;
+}
+@media screen and (max-width:900px){
+    .select-btns-container{
+        padding-bottom: 40px !important;
+    }
 }
 
 .filter-bar-container{
@@ -178,6 +183,12 @@ a{
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+}
+@media screen and (max-width:900px){
+    .filter-bar-container{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .default-input-field>input{
@@ -191,7 +202,7 @@ a{
 .default-input-field>select{
    background-color: var(--terciary-yellow); 
    border-radius: 5px;
-   max-width: 120px;
+   max-width: 110px;
    text-align: center;
    border: 1px solid #d6d2d2;
 }
@@ -208,16 +219,29 @@ a{
     cursor: poitner;
     transition:.5s;
 }
+@media screen and (max-width:900px){
+    .map-search-btn{
+      padding: 5px 40px;
+      margin-top: 5px;
+    }
+}
+
+
 .map-search-btn:hover{
     background-color: transparent;
     border: 1px solid #2a2a2a;
     color: var(--primary-black);
 }
 
-
 .map-img-container{
     margin: 10px 0 20px 0;
 }
+@media screen and (max-width:900px){
+    .map-img-container>img{
+      max-width: 300px;
+    }
+}
+
 
 /* rodapé */
 
