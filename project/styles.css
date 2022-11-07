@@ -384,7 +384,7 @@ a{
 #exampleModalToggle .modal-content form input,
 #exampleModalToggle2 .modal-content form input {
     border: none;
-    max-width: 300px;
+    width: 200px;
     height: 35px;
     padding: 5px;
     margin: 10px 0px;
@@ -396,12 +396,21 @@ a{
     width: 120px;
     border: none;
     font-size: 20px;
+    padding: 5px 10px;
     margin: 10px;
     border-radius: 15px;
     color: var(--text-color-white);
     background-color: var(--primary-black);
     box-shadow: 0px 2px 3px var(--primary-black);
+    transition: .5s;
 }
+
+.modal-content form button:hover{
+   background-color: transparent !important;
+   border: 1px solid #2a2a2a !important;
+   color: #2a2a2a !important;
+}
+
 
 #exampleModalToggle .modal-content form p,
 #exampleModalToggle2 .modal-content form p {
@@ -418,22 +427,24 @@ a{
     font-weight: bold;
 }
 
+
+
 #senha1 {
     position: absolute;
     top: 136px;
-    left: 233px;
+    left: 240px;
 }
 
 #senha2 {
     position: absolute;
-    bottom: 34vh;
-    right: 30px;
+    top: 190px;
+    left: 240px;
 }
 
 #senha3 {
     position: absolute;
-    bottom: 24vh;
-    right: 30px;
+    top: 245px;
+    left: 240px;
 }
 
 /* rodapé */
