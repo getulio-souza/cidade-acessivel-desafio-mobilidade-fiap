@@ -2,6 +2,8 @@
 
 /*** NAVBAR ****/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 :root{
     --primary-yellow: #fdefbc;
     --secondary-yellow: #fce38a;
@@ -19,6 +21,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -422,8 +425,6 @@ a{
     color: var(--secondary-black);
     font-weight: bold;
 }
-
-
 
 #senha1 {
     position: absolute;
