@@ -281,6 +281,7 @@ a{
 @media screen and (max-width: 767px){
     .details div {
         flex-wrap: wrap;
+        gap: 30px;
     }
 }
 
@@ -538,4 +539,15 @@ footer .links {
 .logo-and-social-footer-container{
     margin: 0 auto;
     margin-top: 20px;
+}
+
+.copyright-container{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright-text{
+    margin-top: 10px;
+    font-size: 10px;
+    /* text-decoration: underline; */
 }
