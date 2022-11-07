@@ -180,6 +180,7 @@ a{
     border-radius: 5px;
     max-width: 110px;
     text-align: center;
+    border: 1px solid #d6d2d2;
 }
 
 .default-input-field>select{
@@ -187,7 +188,7 @@ a{
    border-radius: 5px;
    max-width: 120px;
    text-align: center;
-   
+   border: 1px solid #d6d2d2;
 }
 
 .map-search-btn{
@@ -206,6 +207,11 @@ a{
     background-color: transparent;
     border: 1px solid #2a2a2a;
     color: var(--primary-black);
+}
+
+
+.map-img-container{
+    margin: 10px 0 20px 0;
 }
 
 /* rodapé */
