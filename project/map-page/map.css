@@ -124,7 +124,7 @@ a{
 
 .map-container{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: var(--secondary-yellow);
     display: flex;
     flex-direction: column;
@@ -141,9 +141,10 @@ a{
   max-width: 400px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 40px;
+  /* margin-bottom: 20px; */
   line-height: 25px;
 }
+
 
 .map-btn{
     border: none;
@@ -169,12 +170,7 @@ a{
 .select-btns-container{
    display: flex;
    justify-content: center;
-   padding-bottom: 20px;
-}
-@media screen and (max-width:900px){
-    .select-btns-container{
-        padding-bottom: 40px !important;
-    }
+   padding: 20px;
 }
 
 .filter-bar-container{
@@ -184,16 +180,16 @@ a{
     gap: 10px;
     margin-bottom: 20px;
 }
-@media screen and (max-width:700px){
-    .filter-bar-container{
-        display: flex;
-        flex-direction: column;
-    }
-}
 @media screen and (max-width:900px){
     .filter-bar-container{
         display: grid;
         grid-template-columns:repeat(3,1fr);
+    }
+}
+@media screen and (max-width:700px){
+    .filter-bar-container{
+        display: flex;
+        flex-direction: column;
     }
 }
 
