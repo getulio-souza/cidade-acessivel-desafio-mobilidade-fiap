@@ -21,11 +21,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
 }
 
 body {
     user-select: none;
+    font-family: 'roboto', Arial, Helvetica, sans-serif !important;
+}
+
+header ul li{
+    font-family: 'roboto', Arial, Helvetica, sans-serif !important;
 }
 
 .navbar-container{
