@@ -39,6 +39,6 @@ window.addEventListener("DOMContentLoaded", () => {
 //filter categories
 filterBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-        console.log(e.currentTarget.dataset.id);
+        const category = e.currentTarget.dataset.id;
     })
 })
