@@ -333,7 +333,13 @@ a{
     font-size: 50px;
 }
 
-.details div p {
+.details h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.details p {
     width: 80%;
     text-align: center;
     font-size: 15px;
@@ -389,6 +395,85 @@ a{
 
 .mission-container{
     display: flex !important;
+}
+
+/* contact */
+
+.contact {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+@media screen and (max-width:900px){
+    .contact section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contact img {
+    max-width: 400px;
+}
+@media screen and (max-width:700px){
+    .contact img{
+        max-width: 250px;
+    }
+}
+
+.contact p {
+    font-size: 17px;
+}
+
+.contact form input {
+    height: 30px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact form div {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.contact form button {
+    border: none;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 5px;
+    color: var(--text-color-white);
+    background-color: var(--primary-black);
+    box-shadow: 0px 2px 3px var(--primary-black);
+    transition:.5s;
+}
+.contact form button:hover{
+    background-color: transparent;
+    border: 1px solid rgb(173, 168, 168);
+    color: var(--primary-black);
+}
+
+
+.contact form input,
+.contact form textarea,
+.contact form select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(173, 168, 168);
 }
 
 /* modal login e cadastro*/

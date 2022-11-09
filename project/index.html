@@ -98,6 +98,7 @@
                 </article>
             </section>
         </section>
+
         <!-- how to work (como funciona) -->
         <article class="details">
             <h4>Como funciona</h4>
@@ -166,8 +167,9 @@
                 </article>
             </section>
         </section>
+
         <!-- values & mission -->
-        <article class="details">
+        <article class="details" id="mission-values">
             <h4>Missão e valores</h4>
             <div>
                 <section>
@@ -197,6 +199,64 @@
                 </section>
             </div>
         </article>
+
+        <!-- Contact -->
+        <article class="contact" id="contactUs">
+            <h2>Entre em contato conosco!</h2>
+            <p>Preencha o formulário abaixo, é rápido.</p>
+            <section>
+                <figure>
+                    <img src="/img/contato.png" alt="">
+                </figure>
+                <form action="">
+                    <label for="">Nome</label>
+                    <input type="text" placeholder="Digite seu nome">
+                    <label for="">E-mail</label>
+                    <input type="email" placeholder="Digite seu e-mail">
+                    <label for="">Assunto</label>
+                    <select>
+                        <option></option>
+                        <option>Dúvidas</option>
+                        <option>Elogios</option>
+                        <option>Reclamações</option>
+                        <option>Outro</option>
+                    </select>
+                    <label for="">Mensagem</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem"
+                        maxlength="300"></textarea>
+                    <div>
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </article>
+
+        <!-- FAQ -->
+        <article class="details" id="faq">
+            <div>
+                <section>
+                    <div>
+                        <h3>Como apontar local?</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non delectus ex rem, fugiat eum suscipit corporis libero dolores id ipsam!</p>
+                </section>
+    
+                <section>
+                    <div>
+                        <h3>Como buscar local?</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non delectus ex rem, fugiat eum suscipit corporis libero dolores id ipsam.</p>
+                </section>
+
+                <section>
+                    <div>
+                        <h3>Como registrar fotos?</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non delectus ex rem, fugiat eum suscipit corporis libero dolores id ipsam!</p>
+                </section>
+            </div>
+        </article>
+
     </main>
     <!-- Modal -->
 
@@ -273,16 +333,16 @@
             <div class="col-xl-2 links">
                 <p class="title-category-footer">Sobre nós</p>
                 <p><a href="#aboutUS">Quem somos?</a></p>
-                <p><a href="#">Missão e Valores</a></p>
+                <p><a href="#mission-values">Missão e Valores</a></p>
             </div>
             <div class="col-xl-2 links">
                 <p class="title-category-footer">Suporte</p>
-                <p><a href="./contact-us/contato.html">Contato</a></p>
-                <p><a href="#">FAQ</a></p>
+                <p><a href="#contactUs">Contato</a></p>
+                <p><a href="#faq">FAQ</a></p>
             </div>
             <div class="col-xl-2 links">
                 <p class="title-category-footer">Comunidade</p>
-                <p><a href="/project/contact-us/contato.html ">Contato</a></p>
+                <p><a href="#">Contato</a></p>
                 <p><a href="#">FAQ</a></p>
             </div>
             <div class="col-xl-2 links">
