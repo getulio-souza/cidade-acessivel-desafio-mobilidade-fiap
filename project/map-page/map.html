@@ -14,133 +14,133 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Mobility</title>
 </head>
+
 <body>
-<!-- Create nav -->
-<header>
-    <nav class="navbar-container">
-        <!-- catogories -->
-        <ul class="btn-category-container">
-            <li><a href="#" class="login-btn">
-                    <div class="btn-category-user">
-                        <i class="fa-solid fa-user"></i>>
-                        <div>Mario da Silva Costa</div>
+    <!-- Create nav -->
+    <header>
+        <nav class="navbar-container">
+            <!-- catogories -->
+            <ul class="btn-category-container">
+                <li><a href="#" class="login-btn">
+                        <div class="btn-category-user">
+                            <i class="fa-solid fa-user"></i>>
+                            <div>Mario da Silva Costa</div>
+                        </div>
+                    </a></li>
+            </ul>
+            <div class="logo-container">
+                <a href="/project/index.html">
+                    <img src="/img/icone do logo.JPG" alt="" class="logo-img">
+                </a>
+            </div>
+            <!-- hamburguer menu-->
+            <div class="hamburguer-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <!-- main header -->
+        <section class="map-container">
+            <h1 class="map-title">Mapa Interativo</h1>
+            <h5 class="map-subtitle">Selecione uma opção</h5>
+            <!-- select buttons -->
+            <article class="map-container">
+                <div class="select-btns-container">
+                    <button type="button" class="map-btn point-btn" data-id="point-place">Apontar local</button>
+                    <button type="button" class="map-btn search-btn" data-id="search-place">Buscar local</button>
+                </div>
+                <!-- filter bar -->
+                <section class="filter-bar-container hide-filter-bar">
+                    <div class="default-input-field">
+                        <input type="text" placeholder="Nome da rua">
                     </div>
-                </a></li>
-        </ul>
-        <div class="logo-container">
-            <a href="/project/index.html">
-                <img src="/img/icone do logo.JPG" alt="" class="logo-img">
-            </a>
-        </div>
-        <!-- hamburguer menu-->
-        <div class="hamburguer-btn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
-    <!-- main header -->
-    <section class="map-container">
-        <h1 class="map-title">Mapa Interativo</h1>
-        <h5 class="map-subtitle">Selecione uma opção</h5>
-        <!-- select buttons -->
-        <article class="map-container">
-            <div class="select-btns-container">
-                <button type="button" class="map-btn point-btn" data-id="point-place">Apontar local</button>
-                <button type="button" class="map-btn search-btn" data-id="search-place">Buscar local</button>
-            </div>
-            <!-- filter bar -->
-            <section class="filter-bar-container filter-bar">
-                <div class="default-input-field">
-                    <input type="text" placeholder="Nome da rua">
+                    <!-- número -->
+                    <div class="default-input-field">
+                        <input type="tel" placeholder="Número">
+                    </div>
+                    <!-- regiao-->
+                    <div class="default-input-field">
+                        <select name="regiao" id="regiao">
+                            <option value="0">Região</option>
+                            <option value="1">Zona Norte</option>
+                            <option value="2">Zona Sul </option>
+                            <option value="3">Zona Leste</option>
+                            <option value="4">Zona Oeste</option>
+                        </select>
+                    </div>
+                    <!-- bairro -->
+                    <div class="default-input-field">
+                        <select name="bairro" id="bairro">
+                            <option value="0">Bairro</option>
+                            <option value="1">Santana</option>
+                            <option value="2">Moema </option>
+                            <option value="3">Capão Redondo</option>
+                            <option value="4">Santo Amaro</option>
+                            <option value="5">Saúde</option>
+                            <option value="6">Centro</option>
+                            <option value="7">Itaquera</option>
+                        </select>
+                    </div>
+                    <!-- problem -->
+                    <div class="default-input-field">
+                        <select name="problem" id="problem">
+                            <option value="0">Problema</option>
+                            <option value="1">Calçada escuracada</option>
+                            <option value="2">Ausência de rampa de acesso</option>
+                            <option value="3">Sinalização inexistente</option>
+                            <option value="4">Iluminação</option>
+                        </select>
+                    </div>
+                    <!-- action button -->
+                    <div class="map-search-btn-container">
+                        <button class="map-search-btn">Procurar</button>
+                    </div>
+                </section>
+                <!-- mapa -->
+                <div class="map-img-container">
+                    <img src="/img/mapa-sp.JPG" alt="">
                 </div>
-                <!-- número -->
-                <div class="default-input-field">
-                    <input type="tel" placeholder="Número">
-                </div>
-                <!-- regiao-->
-                <div class="default-input-field">
-                    <select name="regiao" id="regiao">
-                        <option value="0">Região</option>
-                        <option value="1">Zona Norte</option>
-                        <option value="2">Zona Sul </option>
-                        <option value="3">Zona Leste</option>
-                        <option value="4">Zona Oeste</option>
-                    </select>
-                </div>
-                <!-- bairro -->
-                <div class="default-input-field">
-                    <select name="bairro" id="bairro">
-                        <option value="0">Bairro</option>
-                        <option value="1">Santana</option>
-                        <option value="2">Moema </option>
-                        <option value="3">Capão Redondo</option>
-                        <option value="4">Santo Amaro</option>
-                        <option value="5">Saúde</option>
-                        <option value="6">Centro</option>
-                        <option value="7">Itaquera</option>
-                    </select>
-                </div>
-                <!-- problem -->
-                <div class="default-input-field">
-                    <select name="problem" id="problem">
-                        <option value="0">Problema</option>
-                        <option value="1">Calçada escuracada</option>
-                        <option value="2">Ausência de rampa de acesso</option>
-                        <option value="3">Sinalização inexistente</option>
-                        <option value="4">Iluminação</option>
-                    </select>
-                </div>
-                <!-- action button -->
-                <div class="map-search-btn-container">
-                    <button class="map-search-btn">Procurar</button>
-                </div>
-            </section>
-            <!-- mapa -->
-            <div class="map-img-container">
-                <img src="/img/mapa-sp.JPG" alt="">
-            </div>
-        </article>
-    </section>
-</header>
+            </article>
+        </section>
+    </header>
 
-<!-- Footer -->
-<footer class="bg-azul-claro-degrade container-fluid">
-    <section class="row text-center">
-        <div class="footer-logo col-xl-3 logo-and-social-footer-container">
-            <img src="/img/new-logo-mobility.JPG" alt="" class="logo-footer">
-            <!-- <h1>Mobility</h1>
+    <!-- Footer -->
+    <footer class="bg-azul-claro-degrade container-fluid">
+        <section class="row text-center">
+            <div class="footer-logo col-xl-3 logo-and-social-footer-container">
+                <img src="/img/new-logo-mobility.JPG" alt="" class="logo-footer">
+                <!-- <h1>Mobility</h1>
             <p>Cidade Acessivel</p> -->
-            <div class="footer-icons">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <div class="footer-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
             </div>
-        </div>
-        <!-- categories-->
-        <div class="col-xl-2 links">
-            <p class="title-category-footer">Sobre nós</p>
-            <p><a href="#">Quem somos?</a></p>
-            <p><a href="#">Missão e Valores</a></p>
-        </div>
-        <div class="col-xl-2 links">
-            <p class="title-category-footer">Suporte</p>
-            <p><a href="/project/contact-us/contato.html">Contato</a></p>
-            <p><a href="#">FAQ</a></p>
-        </div>
-        <div class="col-xl-2 links">
-            <p class="title-category-footer">Comunidade</p>
-            <p><a href="#">Contato</a></p>
-            <p><a href="#">FAQ</a></p>
-        </div>
-        <div class="col-xl-2 links">
-            <p class="title-category-footer">Privacidade</p>
-            <p><a href="#">Termos de Uso</a></p>
-            <p><a href="#">Proteção de dados</a></p>
-        </div>
-        <p class="text-center mt-2">2022 Mobility, Inc.</p>
-    </section>
-</footer>
-<script src="/project/js/filter-bar-map.js"></script>
+            <!-- categories-->
+            <div class="col-xl-2 links">
+                <p class="title-category-footer">Sobre nós</p>
+                <p><a href="#">Quem somos?</a></p>
+                <p><a href="#">Missão e Valores</a></p>
+            </div>
+            <div class="col-xl-2 links">
+                <p class="title-category-footer">Suporte</p>
+                <p><a href="/project/contact-us/contato.html">Contato</a></p>
+                <p><a href="#">FAQ</a></p>
+            </div>
+            <div class="col-xl-2 links">
+                <p class="title-category-footer">Comunidade</p>
+                <p><a href="#">Contato</a></p>
+                <p><a href="#">FAQ</a></p>
+            </div>
+            <div class="col-xl-2 links">
+                <p class="title-category-footer">Privacidade</p>
+                <p><a href="#">Termos de Uso</a></p>
+                <p><a href="#">Proteção de dados</a></p>
+            </div>
+            <p class="text-center mt-2">2022 Mobility, Inc.</p>
+        </section>
+    </footer>
+    <script src="/project/js/filter-bar-map.js"></script>
 </body>
+
 </html>
-
-

@@ -200,6 +200,11 @@ a{
     height: 30px;
 }
 
+.hide-filter-bar{
+    height: 0;
+    overflow: hidden;
+}
+
 
 .default-input-field>input{
     background-color: var(--terciary-yellow);

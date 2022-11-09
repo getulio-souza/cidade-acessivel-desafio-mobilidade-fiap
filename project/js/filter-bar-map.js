@@ -3,10 +3,14 @@ const pointBtn = document.querySelector(".point-btn");
 const filterBarContainer = document.querySelector(".fitter-bar-container");
  
 pointBtn.addEventListener('click', () => {
-    if (filterBarContainer.classlist.contains(".show-filter-bar")) {
-        filterBarContainer.classlist.remove(".show-filter-bar")
+    if (filterBarContainer.classList.contains(".hide-filter-bar")) {
+        console.log("1")
+        pointBtn.classList.remove(".hide-filter-bar");
+        pointBtn.classList.add(".show-filter-bar");
     }
     else {
-        filterBarContainer.classList.add("show-filter-bar");
+                console.log("2")
+        pointBtn.classList.remove(".show-filter-bar");
+        pointBtn.classList.add(".hide-filter-bar");
     }
 })
