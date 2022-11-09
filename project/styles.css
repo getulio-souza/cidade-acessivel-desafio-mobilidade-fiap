@@ -387,7 +387,9 @@ a{
 
 /* Missão and values*/
 
-
+.mission-container{
+    display: flex !important;
+}
 
 /* modal login e cadastro*/
 
