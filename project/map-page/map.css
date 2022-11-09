@@ -179,7 +179,10 @@ a{
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+    height: 0;
+    overflow: hidden;
 }
+
 @media screen and (max-width:900px){
     .filter-bar-container{
         display: grid;
@@ -193,13 +196,10 @@ a{
     }
 }
 
-.desativado{
-    display: none;
+.show-filter-bar{
+    height: 30px;
 }
 
-.ativado{
-    display: flex;
-}
 
 .default-input-field>input{
     background-color: var(--terciary-yellow);
