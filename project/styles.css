@@ -387,6 +387,12 @@ a{
     box-shadow: 0px 2px 3px rgb(173, 168, 168);
 }
 
+@media screen and (max-width: 500px) {
+    .about-us-img{
+        width: 350px;
+    }
+}
+
 .about-us-content{
     text-align: justify;
 }
@@ -400,7 +406,7 @@ a{
 /* contact */
 
 .contact {
-    margin: 10px;
+    padding: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -410,9 +416,11 @@ a{
 .contact section {
     display: flex;
     align-items: center;
+    flex-wrap: wrap-reverse;
     justify-content: space-evenly;
     gap: 40px;
 }
+
 @media screen and (max-width:900px){
     .contact section{
         display: flex;
@@ -476,6 +484,21 @@ a{
     border: 1px solid rgb(173, 168, 168);
 }
 
+@media screen and (max-width: 500px) {
+    .contact form div {
+        justify-content: center;
+    }
+
+    .contact form input,
+    .contact form textarea,
+    .contact form select {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 /* modal login e cadastro*/
 
 #exampleModalToggle .modal-header,
@@ -483,17 +506,8 @@ a{
     border-bottom: none !important;
 }
 
-#exampleModalToggle .modal-content {
-    width: 350px;
-    height: 400px;
-    background-color: var(--secondary-yellow);
-    border-radius: 5px;
-    box-shadow: 1px 2px 3px #2a2a2a;
-}
-
+#exampleModalToggle .modal-content,
 #exampleModalToggle2 .modal-content {
-    width: 350px;
-    height: 450px;
     background-color: var(--secondary-yellow);
     border-radius: 5px;
     box-shadow: 1px 2px 3px #2a2a2a;
@@ -517,7 +531,7 @@ a{
 #exampleModalToggle .modal-content form input,
 #exampleModalToggle2 .modal-content form input {
     border: none;
-    width: 200px;
+    width: 90%;
     height: 35px;
     padding: 5px;
     margin: 10px 0px;
@@ -539,11 +553,10 @@ a{
 }
 
 .modal-content form button:hover{
-   background-color: transparent !important;
-   border: 1px solid #2a2a2a !important;
-   color: #2a2a2a !important;
-}
-
+    background-color: transparent !important;
+    border: 1px solid #2a2a2a !important;
+    color: #2a2a2a !important;
+ }
 
 #exampleModalToggle .modal-content form p,
 #exampleModalToggle2 .modal-content form p {
@@ -559,6 +572,27 @@ a{
     color: var(--secondary-black);
     font-weight: bold;
 }
+
+/*
+
+#exampleModalToggle .modal-content {
+    width: 350px;
+    height: 400px;
+    background-color: var(--secondary-yellow);
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px #2a2a2a;
+}
+
+#exampleModalToggle2 .modal-content {
+    width: 350px;
+    height: 450px;
+    background-color: var(--secondary-yellow);
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px #2a2a2a;
+}
+
+
+
 
 #senha1 {
     position: absolute;
@@ -576,7 +610,7 @@ a{
     position: absolute;
     top: 245px;
     left: 240px;
-}
+} */
 
 /* rodapé */
 
