@@ -14,6 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Mobility</title>
 </head>
+<body>
 <!-- Create nav -->
 <header>
     <nav class="navbar-container">
@@ -43,11 +44,11 @@
         <!-- select buttons -->
         <article class="map-container">
             <div class="select-btns-container">
-                <button type="button" class="map-btn" data-id="point-place">Apontar local</button>
-                <button type="button" class="map-btn" data-id="search-place">Buscar local</button>
+                <button type="button" class="map-btn point-btn" data-id="point-place">Apontar local</button>
+                <button type="button" class="map-btn search-btn" data-id="search-place">Buscar local</button>
             </div>
             <!-- filter bar -->
-            <section class="filter-bar-container desativado">
+            <section class="filter-bar-container filter-bar">
                 <div class="default-input-field">
                     <input type="text" placeholder="Nome da rua">
                 </div>
@@ -138,9 +139,8 @@
         <p class="text-center mt-2">2022 Mobility, Inc.</p>
     </section>
 </footer>
-
-<body>
-
+<script src="/project/js/filter-bar-map.js"></script>
 </body>
-
 </html>
+
+
