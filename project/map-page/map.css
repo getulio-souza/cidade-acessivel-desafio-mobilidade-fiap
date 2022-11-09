@@ -193,6 +193,14 @@ a{
     }
 }
 
+.desativado{
+    display: none;
+}
+
+.ativado{
+    display: flex;
+}
+
 .default-input-field>input{
     background-color: var(--terciary-yellow);
     border-radius: 5px;
