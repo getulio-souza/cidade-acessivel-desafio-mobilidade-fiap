@@ -145,7 +145,6 @@ a{
   line-height: 25px;
 }
 
-
 .map-btn{
     border: none;
     background-color: var(--terciary-yellow);
@@ -236,15 +235,25 @@ a{
     }
 }
 
-
 .map-search-btn:hover{
     background-color: transparent;
     border: 1px solid #2a2a2a;
     color: var(--primary-black);
 }
 
+/* .hide-map{
+    height:0px;
+    overflow: hidden;
+} */
+
+
 .map-img-container{
     margin: 10px 0 20px 0;
+    overflow: visible;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(173, 168, 168);
+    /* height: 300px;
+    overflow: visible; */
 }
 @media screen and (max-width:700px){
     .map-img-container>img{
@@ -257,6 +266,9 @@ a{
     }
 }
 
+.coordenadas{
+    display: none;
+}
 
 /* rodapé */
 

@@ -50,55 +50,56 @@
                 </div>
                 <!-- filter bar -->
                 <section class="filter-bar-container hide-filter-bar">
-                        <div class="default-input-field">
-                            <input type="text" placeholder="Nome da rua">
-                        </div>
-                        <!-- número -->
-                        <div class="default-input-field">
-                            <input type="tel" placeholder="Número">
-                        </div>
-                        <!-- regiao-->
-                        <div class="default-input-field">
-                            <select name="regiao" id="regiao">
-                                <option value="0">Região</option>
-                                <option value="1">Zona Norte</option>
-                                <option value="2">Zona Sul </option>
-                                <option value="3">Zona Leste</option>
-                                <option value="4">Zona Oeste</option>
-                            </select>
-                        </div>
-                        <!-- bairro -->
-                        <div class="default-input-field">
-                            <select name="bairro" id="bairro">
-                                <option value="0">Bairro</option>
-                                <option value="1">Santana</option>
-                                <option value="2">Moema </option>
-                                <option value="3">Capão Redondo</option>
-                                <option value="4">Santo Amaro</option>
-                                <option value="5">Saúde</option>
-                                <option value="6">Centro</option>
-                                <option value="7">Itaquera</option>
-                            </select>
-                        </div>
-                        <!-- problem -->
-                        <div class="default-input-field">
-                            <select name="problem" id="problem">
-                                <option value="0">Problema</option>
-                                <option value="1">Calçada escuracada</option>
-                                <option value="2">Ausência de rampa de acesso</option>
-                                <option value="3">Sinalização inexistente</option>
-                                <option value="4">Iluminação</option>
-                            </select>
-                        </div>
-                        <!-- action button -->
-                        <div class="map-search-btn-container">
-                            <button class="map-search-btn">Procurar</button>
-                        </div>
+                    <div class="default-input-field">
+                        <input type="text" placeholder="Nome da rua">
+                    </div>
+                    <!-- número -->
+                    <div class="default-input-field">
+                        <input type="tel" placeholder="Número">
+                    </div>
+                    <!-- regiao-->
+                    <div class="default-input-field">
+                        <select name="regiao" id="regiao">
+                            <option value="0">Região</option>
+                            <option value="1">Zona Norte</option>
+                            <option value="2">Zona Sul </option>
+                            <option value="3">Zona Leste</option>
+                            <option value="4">Zona Oeste</option>
+                        </select>
+                    </div>
+                    <!-- bairro -->
+                    <div class="default-input-field">
+                        <select name="bairro" id="bairro">
+                            <option value="0">Bairro</option>
+                            <option value="1">Santana</option>
+                            <option value="2">Moema </option>
+                            <option value="3">Capão Redondo</option>
+                            <option value="4">Santo Amaro</option>
+                            <option value="5">Saúde</option>
+                            <option value="6">Centro</option>
+                            <option value="7">Itaquera</option>
+                        </select>
+                    </div>
+                    <!-- problem -->
+                    <div class="default-input-field">
+                        <select name="problem" id="problem">
+                            <option value="0">Problema</option>
+                            <option value="1">Calçada escuracada</option>
+                            <option value="2">Ausência de rampa de acesso</option>
+                            <option value="3">Sinalização inexistente</option>
+                            <option value="4">Iluminação</option>
+                        </select>
+                    </div>
+                    <!-- action button -->
+                    <div class="map-search-btn-container">
+                        <button class="map-search-btn">Procurar</button>
+                    </div>
                 </section>
-               
+
                 <!-- mapa -->
                 <div class="map-img-container">
-                    <img src="/img/mapa-sp.JPG" alt="">
+                    <div id="coordenadas" class="coordenadas"></div>
+                    <div id="mapa" class="mapa"></div>
                 </div>
             </article>
         </section>
@@ -141,7 +142,10 @@
             <p class="text-center mt-2">2022 Mobility, Inc.</p>
         </section>
     </footer>
+    <!-- filter bar -->
     <script src="../js/filter-bar-map.js"></script>
+    <!-- geolocation -->
+    <script src="/project/js/map-geolocation.js"></script>
 </body>
 
 </html>
