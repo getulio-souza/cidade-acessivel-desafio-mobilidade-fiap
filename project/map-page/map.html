@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script async src="https://maps.google.com/maps/api/js?key=&callback=initMap"></script>        
     <title>Mobility</title>
 </head>
-
+<!-- &callback=initMap -->
+<!-- &v=weekly -->
 <body>
     <!-- Create nav -->
     <header>
@@ -45,6 +47,8 @@
             <!-- select buttons -->
             <article class="map-container">
                 <div class="select-btns-container">
+                    <p><button onclick="geoFindMe()">Exibir minha localização</button></p>
+                    <div id="out"></div>
                     <button type="button" class="map-btn point-btn" data-id="point-place">Apontar local</button>
                     <button type="button" class="map-btn search-btn" data-id="search-place">Buscar local</button>
                 </div>
@@ -97,9 +101,8 @@
                 </section>
                
                 <!-- mapa -->
-                <div class="map-img-container">
-                    <img src="/img/mapa-sp.JPG" alt="">
-                </div>
+                <p class="fs-3">Localização</p>
+                <div id="map" style="width:100%;height:300px;background:grey;display:block;"></div>
             </article>
         </section>
     </header>
@@ -142,6 +145,7 @@
         </section>
     </footer>
     <script src="../js/filter-bar-map.js"></script>
+    <script src="../js/route_distance.js"></script>
 </body>
 
 </html>
