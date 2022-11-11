@@ -190,8 +190,14 @@ a{
 }
 @media screen and (max-width:700px){
     .filter-bar-container{
+        position: relative;
         display: flex;
         flex-direction: column;
+        padding: 7rem 0 6rem 0;
+    }
+    .hide-filter-bar{
+        height: 0px;
+        overflow: hidden;
     }
 }
 
