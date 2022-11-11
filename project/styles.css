@@ -45,11 +45,11 @@ header ul li{
     top: 25px;
     right: 10px;
 }
-@media screen and (max-width:900px){
+/* @media screen and (max-width:900px){
    .btn-category-container>li{
     display: none;
    }
-}
+} */
 
 .btn-category-container>li{
     margin: 0 10px;
